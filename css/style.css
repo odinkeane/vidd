@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    font-family: "Open Sans", sans-serif;
+}
+:root{
+    --bg-color: black;
+    --text-color: white;
+    --gap-small: 10px;
+    --gap-media: calc(var(--gap-small) * 2);
+    --gap-large: calc(var(--gap-small) * 3);
+    --max-width-large: 1440px;
+    --max-width-medium: 1030px;
+    --max-widht-small: 610px;
+    --max-widtx-x-small: 505px;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+}
+
+header, footer, .image-text-block, .form-text-block{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+button{
+    width: 185px;
+    height: 62px;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    background: transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 17px;
+    background: none;
+    border: 1px solid #d9d9d9;
+    font-size: 16px;
+    color: var(--text-color);
+}
+.max-size-large{
+    max-width: var(--max-width-large);
+    margin: 0 auto;
+    padding: 50px 100px;
+}
+.max-size-medium{
+    max-width: var(--max-width-medium);
+    margin: 0 auto;
+} 
+
+.max-size-small{
+    max-width: var(--max-widht-small);
+    text-align: left !important;
+}
+.max-size-x-small{
+    max-width: var(--max-widtx-x-small);
+}
+
+.social-media{
+    display: flex;
+    gap: var(--gap-large);
+}
+
+.main-hero, .text-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-large);
+    text-align: center;
+    width: 100%;
+    color: var(--text-color);
+}
+.image-block{
+    text-align: center;
+   
+}
+.image-block img{
+    width: 30%;
+    margin: 0.5%;
+}
+
+
+.bg-block{
+    --text-color: black;
+    padding: 70px;
+    background: url(../images/bg.png) bottom/cover;
+    
+}
