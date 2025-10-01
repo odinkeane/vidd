@@ -100,6 +100,9 @@ input[type="text"] {
 
 .max-size-x-small {
     max-width: var(--max-width-x-small);
+    img{
+        width: 100%;
+    }
 }
 
 
@@ -146,6 +149,7 @@ input[type="text"] {
     }
     .max-size-small{
         text-align: center !important;
+        padding: 20px;
     }
     .max-size-large{
         padding: 50px 20px;
