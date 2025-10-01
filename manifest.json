@@ -12,8 +12,8 @@
             "sizes": "512x512"
         }
     ],
-     "id": "/?source=pwa",
-     "start_url": "/?source=pwa",
+     "id": "/vidd/?source=pwa",
+     "start_url": "/vidd/?source=pwa",
      "background_color":"black",
      "theme_color": "black",
      "discription": "",
