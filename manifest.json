@@ -1,23 +1,23 @@
 {
-    "name":"Тестовый сайт",
+    "name": "Тестовый сайт для учебных занятий",
     "short_name": "Итоговая",
-    "icons":[
+    "icons": [
         {
-            "src": "./images/icons/logo.svg",
-            "type": "image/svg+xml",
+            "src": "images/192.png",
+            "type": "image/png",
             "sizes": "192x192"
-        },{
-            "src": "./images/icons/logo.svg",
-            "type": "image/svg+xml",
+        },
+        {
+            "src": "images/512.png",
+            "type": "image/png",
             "sizes": "512x512"
         }
     ],
-     "id": "/vidd/?source=pwa",
-     "start_url": "/vidd/?source=pwa",
-     "background_color":"black",
-     "theme_color": "black",
-     "discription": "",
-     "display": "standalone",
-     "orientation": "portrait"
-
+    "id": "/?source=pwa",
+    "start_url": "/?source=pwa",
+    "background_color": "black",
+    "theme_color": "black",
+    "description": "Сайт выполнен в рамках итоговой работы курса WEB-программист: создание сайтов и верстка веб-страниц",
+    "display": "standalone",
+    "orientation": "portrait"
 }

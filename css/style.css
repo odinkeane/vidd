@@ -1,48 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-*{
+* {
     font-family: "Open Sans", sans-serif;
 }
-:root{
+
+:root {
     --bg-color: black;
     --text-color: white;
     --gap-small: 10px;
-    --gap-media: calc(var(--gap-small) * 2);
+    --gap-medium: calc(var(--gap-small) * 2);
     --gap-large: calc(var(--gap-small) * 3);
     --max-width-large: 1440px;
     --max-width-medium: 1030px;
-    --max-widht-small: 610px;
-    --max-widtx-x-small: 505px;
+    --max-width-small: 610px;
+    --max-width-x-small: 505px;
 }
-body{
+
+body {
     background: var(--bg-color);
     color: var(--text-color);
 }
 
-h1{
+h1 {
     font-size: 60px;
     font-weight: 600;
 }
 
-h2{
+h2 {
     font-size: 36px;
     font-weight: 600;
 }
 
-a{
+a {
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     filter: brightness(0.8);
 }
 
-header, footer, .image-text-block, .form-text-block{
+
+body{
+    overflow-x: hidden;
+}
+
+header,
+footer,
+.image-text-block,
+.form-text-block {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-button{
+button {
     width: 185px;
     height: 62px;
     border: 2px solid var(--text-color);
@@ -53,12 +64,15 @@ button{
     font-size: 16px;
     font-weight: bold;
 }
-button:hover, input[type="text"]:hover, input[type="text"]:focus{
+
+button:hover,
+input[type="text"]:hover,
+input[type="text"]:focus {
     --text-color: #7d1bae;
     border-color: var(--text-color);
 }
 
-input[type="text"]{
+input[type="text"] {
     width: 100%;
     padding: 17px;
     background: none;
@@ -67,30 +81,35 @@ input[type="text"]{
     color: var(--text-color);
     outline: none;
 }
-.max-size-large{
+
+.max-size-large {
     max-width: var(--max-width-large);
     margin: 0 auto;
     padding: 50px 100px;
 }
-.max-size-medium{
+
+.max-size-medium {
     max-width: var(--max-width-medium);
     margin: 0 auto;
-} 
+}
 
-.max-size-small{
-    max-width: var(--max-widht-small);
+.max-size-small {
+    max-width: var(--max-width-small);
     text-align: left !important;
 }
-.max-size-x-small{
-    max-width: var(--max-widtx-x-small);
+
+.max-size-x-small {
+    max-width: var(--max-width-x-small);
 }
 
-.social-media{
+
+.social-media {
     display: flex;
     gap: var(--gap-large);
 }
 
-.main-hero, .text-block{
+.main-hero,
+.text-block {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,47 +118,49 @@ input[type="text"]{
     width: 100%;
     color: var(--text-color);
 }
-.image-block{
+
+.image-block {
     text-align: center;
-   
 }
-.image-block img{
+
+.image-block img {
     width: 30%;
     margin: 0.5%;
 }
 
-
-.bg-block{
+.bg-block {
     --text-color: black;
     padding: 70px;
     background: url(../images/bg.png) bottom/cover;
-    
 }
+
 
 @media screen and (max-width: 1024px){
     .max-size-medium{
         padding: 20px;
-        }
-        .form-text-block, .image-text-block{
-            flex-direction: column;
-            gap: var(--gap-large);
-            align-items: center;
-        }
-        .max-size-small{
-            text-align: center !important;
-        }
-        .max-size-large{
-            padding: 50px 20px;
-        }
+    }
+    .form-text-block, .image-text-block{
+        flex-direction: column;
+        gap: var(--gap-large);
+        align-items: center;
+    }
+    .max-size-small{
+        text-align: center !important;
+    }
+    .max-size-large{
+        padding: 50px 20px;
+    }
+
 }
 
- @media screen and (max-width: 768px){
-        .image-block img{
-            width: 100%;
-        }
+
+@media screen and (max-width: 768px) {
+    .image-block img{
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
     h1{
         font-size: 36px;
     }
@@ -150,11 +171,12 @@ input[type="text"]{
         padding: 70px 0px;
     }
 }
-@media screen and (max-width: 450px){
+
+@media screen and (max-width: 450px) {
     a img{
         height: 30px;
     }
     .social-media{
-        gap: var(--gap-small)
+        gap: var(--gap-small);
     }
 }
