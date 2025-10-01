@@ -100,6 +100,7 @@ input[type="text"] {
 
 .max-size-x-small {
     max-width: var(--max-width-x-small);
+    width: 100%;
     img{
         width: 100%;
     }
@@ -149,7 +150,7 @@ input[type="text"] {
     }
     .max-size-small{
         text-align: center !important;
-        padding: 20px;
+        
     }
     .max-size-large{
         padding: 50px 20px;
@@ -173,6 +174,12 @@ input[type="text"] {
     }
     .bg-block{
         padding: 70px 0px;
+    }
+    .max-size-small{
+        padding: 20px;
+        img{
+            width: 100%;
+        }
     }
 }
 
